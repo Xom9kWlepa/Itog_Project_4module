@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ПОЛЁТ — Ваши данные</title>
+<link rel="stylesheet" href="style/reset.css">
+<link rel="stylesheet" href="style/fonts.css">
+<link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+<div class="page">
+
+  <header class="nav">
+    <a href="index.html" class="logo"><span class="dot"></span>ПОЛЁТ</a>
+    <nav class="menu">
+      <a href="about_us.html">О НАС</a>
+      <a href="events.html">СОБЫТИЯ</a>
+      <a href="wine.html">ВИНО</a>
+      <a href="merch.html">МЕРЧ</a>
+    </nav>
+    <a href="table_booking.html" class="btn-nav">ЗАБРОНИРОВАТЬ <span>→</span></a>
+  </header>
+
+  <section class="eb-hero">
+    <img class="eb-glass eb-glass-1" src="assets/img/event_booking_img/glass1.svg" alt="">
+    <img class="eb-glass eb-glass-2" src="assets/img/event_booking_img/glass2.svg" alt="">
+    <div class="eb-crumb">БРОНЬ / PLT-015</div>
+    <div class="eb-bar"></div>
+    <div class="eb-hero-body">
+      <h1>ВАШИ<br>ДАННЫЕ</h1>
+      <div class="eb-ticket">
+        <div class="h">ВАШ РЕЙС · PLT-015</div>
+        <div class="body">
+          <div class="route"><span>MOW</span><span class="dash"></span><span>ITL</span></div>
+          <div class="k">ДАТА</div><div class="v">15.03 · 20:00</div>
+          <div class="k">СОБЫТИЕ</div><div class="v">СЛЕПАЯ ДЕГУСТАЦИЯ</div>
+          <div class="k">ЦЕНА БИЛЕТА</div><div class="price">4 800 ₽</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="eb-section">
+    <div class="tag">01 / КОНТАКТЫ</div>
+    <h2>КТО ЛЕТИТ</h2>
+    <div class="eb-form">
+      <div class="eb-field" id="fName">
+        <label>ИМЯ</label>
+        <input type="text" id="inName" placeholder="Имя...">
+        <div class="eb-err">Введите имя</div>
+      </div>
+      <div class="eb-field" id="fLast">
+        <label>ФАМИЛИЯ</label>
+        <input type="text" id="inLast" placeholder="фамилия...">
+        <div class="eb-err">Введите фамилию</div>
+      </div>
+      <div class="eb-field" id="fPhone">
+        <label>ТЕЛЕФОН</label>
+        <input type="tel" id="inPhone" placeholder="+7 (__) __ __">
+        <div class="eb-err">Введите телефон</div>
+      </div>
+      <div class="eb-field" id="fEmail">
+        <label>EMAIL</label>
+        <input type="email" id="inEmail" placeholder="you@example.com">
+        <div class="eb-err">Введите корректную почту</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="eb-section">
+    <div class="tag">02 / БИЛЕТЫ</div>
+    <h2>СКОЛЬКО МЕСТ</h2>
+    <div class="eb-tickets">
+      <div class="eb-qty">
+        <button class="gbtn minus" id="ebMinus">−</button>
+        <span class="gcount" id="ebCount">2</span>
+        <span class="meta"><span id="ebWord">БИЛЕТА</span> × 4 800 ₽</span>
+        <button class="gbtn plus" id="ebPlus">+</button>
+      </div>
+      <div class="eb-total">
+        <div class="k">К ОПЛАТЕ</div>
+        <div class="v" id="ebTotal">9 600 ₽</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="eb-pay">
+    <div>
+      <h2>ОПЛАТА</h2>
+      <p>Сразу после оплаты — boarding pass на email.</p>
+    </div>
+    <button class="eb-pay-btn" id="ebPay">ОПЛАТИТЬ <span id="ebPaySum">9 600 ₽</span> <span>→</span></button>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-top">
+      <div>
+        <a href="index.html" class="footer-logo">ПОЛЁТ</a>
+        <p class="footer-sub">ИММЕРСИВНЫЙ ВИННЫЙ ОПЫТ · MOSCOW · 2026</p>
+      </div>
+      <div class="footer-cols">
+        <div>
+          <h4>НАВИГАЦИЯ</h4>
+          <a href="about_us.html">О нас</a>
+          <a href="events.html">События</a>
+          <a href="wine.html">Винная карта</a>
+          <a href="merch.html">Мерч</a>
+        </div>
+        <div>
+          <h4>КОНТАКТ</h4>
+          <p>+7 495 000 00 00</p>
+          <p>hello@polet.bar</p>
+          <p>@polet.legenda</p>
+        </div>
+        <div>
+          <h4>АДРЕС</h4>
+          <p>Москва</p>
+          <p>Большая Никитская, 24</p>
+          <p>12:00 — 02:00</p>
+          <p>Каждый день</p>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 ПОЛЁТ</span>
+      <a href="404.html">ПОЛИТИКА КОНФИДЕНЦИАЛЬНОСТИ</a>
+      <a href="404.html">ПУБЛИЧНАЯ ОФЕРТА</a>
+      <a href="404.html">COOKIES</a>
+    </div>
+  </footer>
+
+</div>
+<script src="js/main_js.js"></script>
+</body>
+</html>

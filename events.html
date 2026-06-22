@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ПОЛЁТ — Табло вылетов</title>
+<link rel="stylesheet" href="style/reset.css">
+<link rel="stylesheet" href="style/fonts.css">
+<link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+<div class="page">
+
+  <header class="nav">
+    <a href="index.html" class="logo"><span class="dot"></span>ПОЛЁТ</a>
+    <nav class="menu">
+      <a href="about_us.html">О НАС</a>
+      <a href="events.html">СОБЫТИЯ</a>
+      <a href="wine.html">ВИНО</a>
+      <a href="merch.html">МЕРЧ</a>
+    </nav>
+    <a href="table_booking.html" class="btn-nav">ЗАБРОНИРОВАТЬ <span>→</span></a>
+  </header>
+
+  <section class="ev-hero">
+    <img class="ev-shape" src="assets/img/events_img/bottle.svg" alt="">
+    <div class="tag label">03 - РАСПИСАНИЕ</div>
+    <h1>ТАБЛО ВЫЛЕТОВ</h1>
+    <div class="hbar"></div>
+    <div class="sub">14 РЕЙСОВ В МАРТЕ · БРОНЬ ОТКРЫТА</div>
+    <div class="ev-stats">
+      <div class="st-title">СТАТИСТИКА</div>
+      <div class="st-row"><span class="n">14</span><span class="l">РЕЙСОВ</span></div>
+      <div class="st-row"><span class="n">196</span><span class="l">БИЛЕТОВ</span></div>
+      <div class="st-row"><span class="n">8</span><span class="l">ДЕГУСТАЦИЙ</span></div>
+      <div class="st-row"><span class="n">6</span><span class="l">СОЛО-ВЕЧЕРОВ</span></div>
+    </div>
+  </section>
+
+  <div class="filter-bar">
+    <span class="flabel">ФИЛЬТР</span>
+    <button class="chip active" data-filter="all">ВСЕ 14</button>
+    <button class="chip" data-filter="ДЕГУСТАЦИЯ">ДЕГУСТАЦИИ 8</button>
+    <button class="chip" data-filter="КОНЦЕРТ">КОНЦЕРТЫ 4</button>
+    <button class="chip" data-filter="СОЛО">СОЛО 2</button>
+    <span class="sort">СОРТИРОВКА ↓</span>
+  </div>
+
+  <div class="ev-head">
+    <span>РЕЙС</span><span>ДАТА</span><span>ВРЕМЯ</span><span>НАЗВАНИЕ</span>
+    <span>ТИП</span><span>МЕСТ</span><span>ЦЕНА</span><span>СТАТУС</span>
+  </div>
+
+  <div class="ev-list">
+    <a class="ev-row" data-type="ДЕГУСТАЦИЯ" href="eventX.html">
+      <span class="c1">PLT-015</span><span class="date">22 ИЮНЯ</span><span class="time">20:00</span>
+      <span class="title">СЛЕПАЯ ДЕГУСТАЦИЯ</span><span class="type">ДЕГУСТАЦИЯ</span>
+      <span class="seats">6 / 14</span><span class="price">4 800 ₽</span>
+      <span class="badge wine">BOARDING</span>
+    </a>
+    <a class="ev-row" data-type="ДЕГУСТАЦИЯ" href="404.html">
+      <span class="c1">PLT-016</span><span class="date">16 МАР</span><span class="time">20:00</span>
+      <span class="title">РЕТРО-РЕЙС: БУРГУНДИЯ</span><span class="type">ДЕГУСТАЦИЯ</span>
+      <span class="seats">9 / 14</span><span class="price">5 200 ₽</span>
+      <span class="badge green">ON TIME</span>
+    </a>
+    <a class="ev-row" data-type="КОНЦЕРТ" href="404.html">
+      <span class="c1">PLT-017</span><span class="date">17 МАР</span><span class="time">21:00</span>
+      <span class="title">VINYL × GAMAY</span><span class="type">КОНЦЕРТ</span>
+      <span class="seats">0 / 30</span><span class="price">3 200 ₽</span>
+      <span class="badge gray">SOLD OUT</span>
+    </a>
+    <a class="ev-row" data-type="КОНЦЕРТ" href="404.html">
+      <span class="c1">PLT-018</span><span class="date">22 МАР</span><span class="time">20:00</span>
+      <span class="title">СОНОР × ВКУС</span><span class="type">КОНЦЕРТ</span>
+      <span class="seats">11 / 20</span><span class="price">6 500 ₽</span>
+      <span class="badge green">ON TIME</span>
+    </a>
+    <a class="ev-row" data-type="ДЕГУСТАЦИЯ" href="404.html">
+      <span class="c1">PLT-019</span><span class="date">23 МАР</span><span class="time">19:30</span>
+      <span class="title">ОРАНЖ ВСЛЕПУЮ</span><span class="type">ДЕГУСТАЦИЯ</span>
+      <span class="seats">3 / 14</span><span class="price">4 800 ₽</span>
+      <span class="badge wine">ALMOST</span>
+    </a>
+    <a class="ev-row" data-type="СОЛО" href="404.html">
+      <span class="c1">PLT-020</span><span class="date">28 МАР</span><span class="time">20:00</span>
+      <span class="title">СОЛО-ВЕЧЕР</span><span class="type">СОЛО</span>
+      <span class="seats">2 / 14</span><span class="price">9 800 ₽</span>
+      <span class="badge wine">ALMOST</span>
+    </a>
+    <a class="ev-row" data-type="КОНЦЕРТ" href="404.html">
+      <span class="c1">PLT-021</span><span class="date">29 МАР</span><span class="time">20:00</span>
+      <span class="title">ИГРИСТОЕ + ТЕХНО</span><span class="type">КОНЦЕРТ</span>
+      <span class="seats">14 / 30</span><span class="price">4 200 ₽</span>
+      <span class="badge green">ON TIME</span>
+    </a>
+    <a class="ev-row" data-type="ЛЕКЦИЯ" href="404.html">
+      <span class="c1">PLT-022</span><span class="date">30 МАР</span><span class="time">21:30</span>
+      <span class="title">КУРСИВ К НАТУРАЛЬНОМУ</span><span class="type">ЛЕКЦИЯ</span>
+      <span class="seats">18 / 30</span><span class="price">2 800 ₽</span>
+      <span class="badge green">ON TIME</span>
+    </a>
+  </div>
+
+  <div class="ev-foot"><a href="404.html">ПОКАЗАТЬ ВСЕ →</a></div>
+
+  <footer class="footer">
+    <div class="footer-top">
+      <div>
+        <a href="index.html" class="footer-logo">ПОЛЁТ</a>
+        <p class="footer-sub">ИММЕРСИВНЫЙ ВИННЫЙ ОПЫТ · MOSCOW · 2026</p>
+      </div>
+      <div class="footer-cols">
+        <div>
+          <h4>НАВИГАЦИЯ</h4>
+          <a href="about_us.html">О нас</a>
+          <a href="events.html">События</a>
+          <a href="wine.html">Винная карта</a>
+          <a href="merch.html">Мерч</a>
+        </div>
+        <div>
+          <h4>КОНТАКТ</h4>
+          <p>+7 495 000 00 00</p>
+          <p>hello@polet.bar</p>
+          <p>@polet.legenda</p>
+        </div>
+        <div>
+          <h4>АДРЕС</h4>
+          <p>Москва</p>
+          <p>Большая Никитская, 24</p>
+          <p>12:00 — 02:00</p>
+          <p>Каждый день</p>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 ПОЛЁТ</span>
+      <a href="404.html">ПОЛИТИКА КОНФИДЕНЦИАЛЬНОСТИ</a>
+      <a href="404.html">ПУБЛИЧНАЯ ОФЕРТА</a>
+      <a href="404.html">COOKIES</a>
+    </div>
+  </footer>
+
+</div>
+<script src="js/main_js.js"></script>
+</body>
+</html>

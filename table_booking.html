@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ПОЛЁТ — Бронь стола</title>
+<link rel="stylesheet" href="style/reset.css">
+<link rel="stylesheet" href="style/fonts.css">
+<link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+<div class="page">
+
+  <header class="nav">
+    <a href="index.html" class="logo"><span class="dot"></span>ПОЛЁТ</a>
+    <nav class="menu">
+      <a href="about_us.html">О НАС</a>
+      <a href="events.html">СОБЫТИЯ</a>
+      <a href="wine.html">ВИНО</a>
+      <a href="merch.html">МЕРЧ</a>
+    </nav>
+    <a href="table_booking.html" class="btn-nav">ЗАБРОНИРОВАТЬ <span>→</span></a>
+  </header>
+
+  <section class="tb-hero">
+    <div class="tag">БРОНЬ</div>
+    <div class="tb-bar"></div>
+    <h1>БРОНЬ<br>СТОЛА</h1>
+    <div class="sub">14 МЕСТ · ОБЫЧНЫЙ РЕЖИМ · БЕЗ ЦИКЛА ПОЛЁТА</div>
+    <img class="tb-grapes" src="assets/img/table_bookoing_img/vinograd.svg" alt="">
+    <div class="tb-info">
+      <h4>ВАЖНО ЗНАТЬ</h4>
+      <div>→ Депозит 2 000 ₽ при бронировании.</div>
+      <div>→ Полностью списывается с чека.</div>
+      <div>→ Отмена за 24 часа — возврат 100%.</div>
+      <div>→ Опоздание до 30 минут — стол держим.</div>
+    </div>
+  </section>
+
+  <section class="tb-section">
+    <div class="tag">01 / ДАТА</div>
+    <h2>ВЫБЕРИ ДЕНЬ</h2>
+    <div class="day-grid">
+      <div class="day" data-wd="ПН" data-d="11"><div class="wd">ПН</div><div class="d">11</div><div class="mo">МАР</div></div>
+      <div class="day" data-wd="ВТ" data-d="12"><div class="wd">ВТ</div><div class="d">12</div><div class="mo">МАР</div></div>
+      <div class="day" data-wd="СР" data-d="13"><div class="wd">СР</div><div class="d">13</div><div class="mo">МАР</div></div>
+      <div class="day" data-wd="ЧТ" data-d="14"><div class="wd">ЧТ</div><div class="d">14</div><div class="mo">МАР</div></div>
+      <div class="day active" data-wd="ПТ" data-d="15"><div class="wd">ПТ</div><div class="d">15</div><div class="mo">МАР</div></div>
+      <div class="day" data-wd="СБ" data-d="16"><div class="wd">СБ</div><div class="d">16</div><div class="mo">МАР</div></div>
+      <div class="day" data-wd="ВС" data-d="17"><div class="wd">ВС</div><div class="d">17</div><div class="mo">МАР</div></div>
+      <div class="day" data-wd="ПН" data-d="18"><div class="wd">ПН</div><div class="d">18</div><div class="mo">МАР</div></div>
+      <div class="day" data-wd="ВТ" data-d="19"><div class="wd">ВТ</div><div class="d">19</div><div class="mo">МАР</div></div>
+      <div class="day" data-wd="СР" data-d="20"><div class="wd">СР</div><div class="d">20</div><div class="mo">МАР</div></div>
+      <div class="day" data-wd="ЧТ" data-d="21"><div class="wd">ЧТ</div><div class="d">21</div><div class="mo">МАР</div></div>
+      <div class="day" data-wd="ПТ" data-d="22"><div class="wd">ПТ</div><div class="d">22</div><div class="mo">МАР</div></div>
+      <div class="day" data-wd="СБ" data-d="23"><div class="wd">СБ</div><div class="d">23</div><div class="mo">МАР</div></div>
+      <div class="day" data-wd="ВС" data-d="24"><div class="wd">ВС</div><div class="d">24</div><div class="mo">МАР</div></div>
+    </div>
+  </section>
+
+  <section class="tb-section">
+    <div class="tag">02 / ВРЕМЯ</div>
+    <h2>СЛОТ</h2>
+    <div class="slot-grid">
+      <div class="slot" data-t="18:00">18:00</div>
+      <div class="slot" data-t="19:00">19:00</div>
+      <div class="slot active" data-t="20:00">20:00</div>
+      <div class="slot" data-t="21:00">21:00</div>
+      <div class="slot" data-t="22:00">22:00</div>
+      <div class="slot" data-t="23:00">23:00</div>
+      <div class="slot" data-t="00:00">00:00</div>
+    </div>
+  </section>
+
+  <section class="tb-section">
+    <div class="tb-two">
+      <div>
+        <div class="tag">03 / ГОСТЕЙ</div>
+        <h2>СКОЛЬКО ЛЮДЕЙ</h2>
+        <div class="guest-row">
+          <button class="gbtn minus" id="tbMinus">−</button>
+          <span class="gcount" id="tbCount">4</span>
+          <span class="gword" id="tbWord">ЧЕЛОВЕКА</span>
+          <button class="gbtn plus" id="tbPlus">+</button>
+        </div>
+      </div>
+      <div style="flex:1">
+        <div class="tag">04 / ПОЖЕЛАНИЯ</div>
+        <h2>ОПЦИЯ</h2>
+        <input class="opt-input" type="text" placeholder="Особый повод, диета, ограничения, любимый столик...">
+      </div>
+    </div>
+  </section>
+
+  <section class="tb-summary">
+    <div>
+      <div class="tag">ИТОГ</div>
+      <div class="sum" id="tbSummary">ПТ · 15 МАРТА · 20:00 · 4 ЧЕЛОВЕКА</div>
+      <div class="dep">Депозит: <b>2 000 ₽</b></div>
+      <div class="small">Будет списано при подтверждении брони</div>
+    </div>
+    <a href="404.html" class="tb-confirm">ПОДТВЕРДИТЬ БРОНЬ <span>→</span></a>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-top">
+      <div>
+        <a href="index.html" class="footer-logo">ПОЛЁТ</a>
+        <p class="footer-sub">ИММЕРСИВНЫЙ ВИННЫЙ ОПЫТ · MOSCOW · 2026</p>
+      </div>
+      <div class="footer-cols">
+        <div>
+          <h4>НАВИГАЦИЯ</h4>
+          <a href="about_us.html">О нас</a>
+          <a href="events.html">События</a>
+          <a href="wine.html">Винная карта</a>
+          <a href="merch.html">Мерч</a>
+        </div>
+        <div>
+          <h4>КОНТАКТ</h4>
+          <p>+7 495 000 00 00</p>
+          <p>hello@polet.bar</p>
+          <p>@polet.legenda</p>
+        </div>
+        <div>
+          <h4>АДРЕС</h4>
+          <p>Москва</p>
+          <p>Большая Никитская, 24</p>
+          <p>12:00 — 02:00</p>
+          <p>Каждый день</p>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 ПОЛЁТ</span>
+      <a href="404.html">ПОЛИТИКА КОНФИДЕНЦИАЛЬНОСТИ</a>
+      <a href="404.html">ПУБЛИЧНАЯ ОФЕРТА</a>
+      <a href="404.html">COOKIES</a>
+    </div>
+  </footer>
+
+</div>
+<script src="js/main_js.js"></script>
+</body>
+</html>

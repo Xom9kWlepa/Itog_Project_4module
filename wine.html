@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ПОЛЁТ — Винная карта</title>
+<link rel="stylesheet" href="style/reset.css">
+<link rel="stylesheet" href="style/fonts.css">
+<link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+<div class="page">
+
+  <header class="nav">
+    <a href="index.html" class="logo"><span class="dot"></span>ПОЛЁТ</a>
+    <nav class="menu">
+      <a href="about_us.html">О НАС</a>
+      <a href="events.html">СОБЫТИЯ</a>
+      <a href="wine.html">ВИНО</a>
+      <a href="merch.html">МЕРЧ</a>
+    </nav>
+    <a href="table_booking.html" class="btn-nav">ЗАБРОНИРОВАТЬ <span>→</span></a>
+  </header>
+
+  <section class="wine-hero">
+    <img class="wine-shape" src="assets/img/wine_img/glass1.svg" alt="">
+    <div class="tag label">07 / КАРТА</div>
+    <h1>ВИНО</h1>
+    <div class="wine-stats">
+      <div class="h">ПО ТИПАМ</div>
+      <div class="ws-row"><span class="l">КРАСНОЕ</span><span class="n">68</span></div>
+      <div class="ws-row"><span class="l">БЕЛОЕ</span><span class="n">54</span></div>
+      <div class="ws-row"><span class="l">ОРАНЖ</span><span class="n">32</span></div>
+      <div class="ws-row"><span class="l">ИГРИСТОЕ</span><span class="n">18</span></div>
+      <div class="ws-row"><span class="l">ДЕСЕРТНОЕ</span><span class="n">8</span></div>
+    </div>
+    <div class="wine-meta">180 ПОЗИЦИЙ · 23 СТРАНЫ · 4 ТИПА</div>
+    <div class="wine-actions">
+      <a href="https://xom9kwlepa.github.io/Module3Project/" class="btn-dark">ИЗУЧИТЬ В ИГРОВОЙ ФОРМЕ <span>→</span></a>
+      <a href="assets/wine_insight.pdf" target="_blank" class="btn-outline">ПРОЧИТАТЬ ЖУРНАЛ</a>
+    </div>
+  </section>
+
+  <div class="wine-filter">
+    <button class="chip active" data-filter="all">ВСЁ 180</button>
+    <button class="chip" data-filter="КРАСНОЕ">КРАСНОЕ 68</button>
+    <button class="chip" data-filter="БЕЛОЕ">БЕЛОЕ 54</button>
+    <button class="chip" data-filter="ОРАНЖ">ОРАНЖ 32</button>
+    <button class="chip" data-filter="ИГРИСТОЕ">ИГРИСТОЕ 18</button>
+    <button class="chip" data-filter="ДЕСЕРТНОЕ">ДЕСЕРТНОЕ 8</button>
+    <span class="sort">СОРТИРОВКА ↓</span>
+  </div>
+
+  <div class="wine-grid">
+    <a class="wine-card" data-type="КРАСНОЕ" href="404.html">
+      <div class="wine-photo"><span class="wine-cat">КРАСНОЕ</span><span class="wine-new">NEW</span><img src="assets/img/wine_img/wine_1.png" alt="Gamay"><span class="wine-year">2021</span></div>
+      <h3>GAMAY</h3><div class="wine-region">Бургундия, FR</div>
+      <div class="wine-cardfoot"><span class="wine-price">4 200 ₽</span><span>→</span></div>
+    </a>
+    <a class="wine-card" data-type="ОРАНЖ" href="404.html">
+      <div class="wine-photo"><span class="wine-cat">ОРАНЖ</span><img src="assets/img/wine_img/wine_2.png" alt="Rkatsiteli"><span class="wine-year">2022</span></div>
+      <h3>RKATSITELI</h3><div class="wine-region">Кахетия, GE</div>
+      <div class="wine-cardfoot"><span class="wine-price">3 600 ₽</span><span>→</span></div>
+    </a>
+    <a class="wine-card" data-type="ИГРИСТОЕ" href="404.html">
+      <div class="wine-photo"><span class="wine-cat">ИГРИСТОЕ</span><img src="assets/img/wine_img/wine_3.png" alt="Franciacorta"><span class="wine-year">2020</span></div>
+      <h3>FRANCIACORTA</h3><div class="wine-region">Ломбардия, IT</div>
+      <div class="wine-cardfoot"><span class="wine-price">6 800 ₽</span><span>→</span></div>
+    </a>
+    <a class="wine-card" data-type="БЕЛОЕ" href="404.html">
+      <div class="wine-photo"><span class="wine-cat">БЕЛОЕ</span><span class="wine-new">NEW</span><img src="assets/img/wine_img/wine_4.png" alt="Riesling"><span class="wine-year">2023</span></div>
+      <h3>RIESLING</h3><div class="wine-region">Мозель, DE</div>
+      <div class="wine-cardfoot"><span class="wine-price">4 900 ₽</span><span>→</span></div>
+    </a>
+    <a class="wine-card" data-type="КРАСНОЕ" href="404.html">
+      <div class="wine-photo"><span class="wine-cat">КРАСНОЕ</span><img src="assets/img/wine_img/wine_5.png" alt="Pinot Noir"><span class="wine-year">2020</span></div>
+      <h3>PINOT NOIR</h3><div class="wine-region">Сонома, US</div>
+      <div class="wine-cardfoot"><span class="wine-price">5 800 ₽</span><span>→</span></div>
+    </a>
+    <a class="wine-card" data-type="ОРАНЖ" href="404.html">
+      <div class="wine-photo"><span class="wine-cat">ОРАНЖ</span><span class="wine-new">NEW</span><img src="assets/img/wine_img/wine_6.png" alt="Pet-Nat Mtsvane"><span class="wine-year">2023</span></div>
+      <h3>PET-NAT MTSVANE</h3><div class="wine-region">Кахетия, GE</div>
+      <div class="wine-cardfoot"><span class="wine-price">4 100 ₽</span><span>→</span></div>
+    </a>
+    <a class="wine-card" data-type="ДЕСЕРТНОЕ" href="404.html">
+      <div class="wine-photo"><span class="wine-cat">ДЕСЕРТНОЕ</span><img src="assets/img/wine_img/wine_7.png" alt="Tokaji Aszu"><span class="wine-year">2018</span></div>
+      <h3>TOKAJI ASZÚ 5P</h3><div class="wine-region">Токай, HU</div>
+      <div class="wine-cardfoot"><span class="wine-price">7 200 ₽</span><span>→</span></div>
+    </a>
+    <a class="wine-card" data-type="БЕЛОЕ" href="404.html">
+      <div class="wine-photo"><span class="wine-cat">БЕЛОЕ</span><img src="assets/img/wine_img/wine_8.png" alt="Chenin Blanc"><span class="wine-year">2022</span></div>
+      <h3>CHENIN BLANC</h3><div class="wine-region">Луара, FR</div>
+      <div class="wine-cardfoot"><span class="wine-price">3 800 ₽</span><span>→</span></div>
+    </a>
+  </div>
+
+  <div class="wine-count">
+    <span class="txt">ПОКАЗАНО 8 ИЗ 180 ПОЗИЦИЙ</span>
+    <a href="404.html" class="btn-more">ЕЩЁ 12 ПОЗИЦИЙ <span>↓</span></a>
+  </div>
+
+  <section class="wine-cta">
+    <div>
+      <div class="tag">НА ИВЕНТАХ</div>
+      <h2>ТЫ НЕ ВЫБИРАЕШЬ</h2>
+      <p>На иммерсивных рейсах подача — кураторская. Каждая фаза цикла — своя категория вина. Все 180 позиций — для брони стола.</p>
+    </div>
+    <a href="events.html" class="btn-wine">СМОТРЕТЬ РЕЙСЫ <span>→</span></a>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-top">
+      <div>
+        <a href="index.html" class="footer-logo">ПОЛЁТ</a>
+        <p class="footer-sub">ИММЕРСИВНЫЙ ВИННЫЙ ОПЫТ · MOSCOW · 2026</p>
+      </div>
+      <div class="footer-cols">
+        <div>
+          <h4>НАВИГАЦИЯ</h4>
+          <a href="about_us.html">О нас</a>
+          <a href="events.html">События</a>
+          <a href="wine.html">Винная карта</a>
+          <a href="merch.html">Мерч</a>
+        </div>
+        <div>
+          <h4>КОНТАКТ</h4>
+          <p>+7 495 000 00 00</p>
+          <p>hello@polet.bar</p>
+          <p>@polet.legenda</p>
+        </div>
+        <div>
+          <h4>АДРЕС</h4>
+          <p>Москва</p>
+          <p>Большая Никитская, 24</p>
+          <p>12:00 — 02:00</p>
+          <p>Каждый день</p>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 ПОЛЁТ</span>
+      <a href="404.html">ПОЛИТИКА КОНФИДЕНЦИАЛЬНОСТИ</a>
+      <a href="404.html">ПУБЛИЧНАЯ ОФЕРТА</a>
+      <a href="404.html">COOKIES</a>
+    </div>
+  </footer>
+
+</div>
+<script src="js/main_js.js"></script>
+</body>
+</html>

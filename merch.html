@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ПОЛЁТ — Мерч</title>
+<link rel="stylesheet" href="style/reset.css">
+<link rel="stylesheet" href="style/fonts.css">
+<link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+<div class="page">
+
+  <header class="nav">
+    <a href="index.html" class="logo"><span class="dot"></span>ПОЛЁТ</a>
+    <nav class="menu">
+      <a href="about_us.html">О НАС</a>
+      <a href="events.html">СОБЫТИЯ</a>
+      <a href="wine.html">ВИНО</a>
+      <a href="merch.html">МЕРЧ</a>
+    </nav>
+    <a href="table_booking.html" class="btn-nav">ЗАБРОНИРОВАТЬ <span>→</span></a>
+  </header>
+
+  <section class="m-hero">
+    <img class="m-shape" src="assets/img/merch_img/vinograd.svg" alt="">
+    <div class="tag label">08 / АТРИБУТЫ</div>
+    <h1>МЕРЧ</h1>
+    <div class="m-bar"></div>
+    <div class="m-sub">ВЕЩИ С СОБОЙ. ПОЛЁТ — ВНЕ ПРОСТРАНСТВА.</div>
+    <div class="m-cart">
+      <div class="lbl">В КОРЗИНЕ</div>
+      <div class="count"><span id="mCount">2</span> <span id="mWord">ТОВАРА</span></div>
+      <div class="sum" id="mSum">5 700 ₽</div>
+      <a href="404.html" class="btn-dark">ОФОРМИТЬ ЗАКАЗ <span>→</span></a>
+      <div class="ship">ДОСТАВКА<b>ПОЧТА · САМОВЫВОЗ</b></div>
+    </div>
+  </section>
+
+  <div class="m-filter">
+    <span class="flabel">КАТЕГОРИИ</span>
+    <button class="chip active" data-filter="all">ВСЁ 12</button>
+    <button class="chip" data-filter="ОДЕЖДА">ОДЕЖДА 4</button>
+    <button class="chip" data-filter="АКСЕССУАРЫ">АКСЕССУАРЫ 5</button>
+    <button class="chip" data-filter="МУЗЫКА">МУЗЫКА 2</button>
+    <button class="chip" data-filter="БАР">БАР 1</button>
+  </div>
+
+  <div class="m-grid">
+    <a class="m-card" data-type="ОДЕЖДА" href="404.html">
+      <div class="m-photo"><span class="m-cat">ОДЕЖДА</span><span class="m-badges"><span class="m-tag sold">SOLD</span><span class="m-tag new">NEW</span></span><img src="assets/img/merch_img/tshirt.png" alt=""></div>
+      <h3>ФУТБОЛКА «ВЫСОТА»</h3><div class="m-desc">3 размера · хлопок</div>
+      <div class="m-cardfoot"><span class="m-price">3 800 ₽</span><span class="m-add">×</span></div>
+    </a>
+    <a class="m-card" data-type="АКСЕССУАРЫ" href="404.html">
+      <div class="m-photo"><span class="m-cat">АКСЕССУАРЫ</span><span class="m-badges"><span class="m-tag sold">SOLD</span></span><img src="assets/img/merch_img/tote_bag.png" alt=""></div>
+      <h3>ТОТЕ-БЭГ ПОЛЁТ</h3><div class="m-desc">Хлопок 16 oz</div>
+      <div class="m-cardfoot"><span class="m-price">1 900 ₽</span><span class="m-add">×</span></div>
+    </a>
+    <a class="m-card" data-type="МУЗЫКА" href="itemX.html">
+      <div class="m-photo"><span class="m-cat">МУЗЫКА</span><span class="m-badges"><span class="m-tag hit">HIT</span></span><img src="assets/img/merch_img/vinil.png" alt=""></div>
+      <h3>ВИНИЛ × DJ POLET</h3><div class="m-desc">180g · лимитка 200 шт</div>
+      <div class="m-cardfoot"><span class="m-price">4 200 ₽</span><button class="m-add plus" id="mAddVinyl" data-price="4200">+</button></div>
+    </a>
+    <a class="m-card" data-type="БАР" href="404.html">
+      <div class="m-photo"><span class="m-cat">БАР</span><span class="m-badges"><span class="m-tag sold">SOLD</span></span><img src="assets/img/merch_img/corkscrew.png" alt=""></div>
+      <h3>ШТОПОР ИЗ СТАЛИ</h3><div class="m-desc">Ручная сборка</div>
+      <div class="m-cardfoot"><span class="m-price">5 600 ₽</span><span class="m-add">×</span></div>
+    </a>
+    <a class="m-card" data-type="ОДЕЖДА" href="404.html">
+      <div class="m-photo"><span class="m-cat">ОДЕЖДА</span><span class="m-badges"><span class="m-tag sold">SOLD</span></span><img src="assets/img/merch_img/hoodie.png" alt=""></div>
+      <h3>ХУДИ «ТУРБУЛЕНТНОСТЬ»</h3><div class="m-desc">Чёрный/уголь</div>
+      <div class="m-cardfoot"><span class="m-price">7 200 ₽</span><span class="m-add">×</span></div>
+    </a>
+    <a class="m-card" data-type="АКСЕССУАРЫ" href="404.html">
+      <div class="m-photo"><span class="m-cat">АКСЕССУАРЫ</span><span class="m-badges"><span class="m-tag sold">SOLD</span></span><img src="assets/img/merch_img/pin.png" alt=""></div>
+      <h3>ЗНАЧОК PLT</h3><div class="m-desc">Эмаль · 30мм</div>
+      <div class="m-cardfoot"><span class="m-price">450 ₽</span><span class="m-add">×</span></div>
+    </a>
+    <a class="m-card" data-type="АКСЕССУАРЫ" href="404.html">
+      <div class="m-photo"><span class="m-cat">АКСЕССУАРЫ</span><span class="m-badges"><span class="m-tag sold">SOLD</span><span class="m-tag new">NEW</span></span><img src="assets/img/merch_img/cards.png" alt=""></div>
+      <h3>ОТКРЫТКИ × 5</h3><div class="m-desc">Иллюстрации</div>
+      <div class="m-cardfoot"><span class="m-price">1 200 ₽</span><span class="m-add">×</span></div>
+    </a>
+    <a class="m-card" data-type="МУЗЫКА" href="404.html">
+      <div class="m-photo"><span class="m-cat">МУЗЫКА</span><span class="m-badges"><span class="m-tag sold">SOLD</span></span><img src="assets/img/merch_img/casset.png" alt=""></div>
+      <h3>КАССЕТА АМБИЕНТ</h3><div class="m-desc">60 минут</div>
+      <div class="m-cardfoot"><span class="m-price">2 400 ₽</span><span class="m-add">×</span></div>
+    </a>
+  </div>
+
+  <div class="m-count-bar">
+    <span class="txt">ПОКАЗАНО 8 ИЗ 12 ТОВАРОВ</span>
+    <a href="404.html" class="btn-more">ЕЩЁ 4 ТОВАРА <span>↓</span></a>
+  </div>
+
+  <footer class="footer">
+    <div class="footer-top">
+      <div>
+        <a href="index.html" class="footer-logo">ПОЛЁТ</a>
+        <p class="footer-sub">ИММЕРСИВНЫЙ ВИННЫЙ ОПЫТ · MOSCOW · 2026</p>
+      </div>
+      <div class="footer-cols">
+        <div>
+          <h4>НАВИГАЦИЯ</h4>
+          <a href="about_us.html">О нас</a>
+          <a href="events.html">События</a>
+          <a href="wine.html">Винная карта</a>
+          <a href="merch.html">Мерч</a>
+        </div>
+        <div>
+          <h4>КОНТАКТ</h4>
+          <p>+7 495 000 00 00</p>
+          <p>hello@polet.bar</p>
+          <p>@polet.legenda</p>
+        </div>
+        <div>
+          <h4>АДРЕС</h4>
+          <p>Москва</p>
+          <p>Большая Никитская, 24</p>
+          <p>12:00 — 02:00</p>
+          <p>Каждый день</p>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 ПОЛЁТ</span>
+      <a href="404.html">ПОЛИТИКА КОНФИДЕНЦИАЛЬНОСТИ</a>
+      <a href="404.html">ПУБЛИЧНАЯ ОФЕРТА</a>
+      <a href="404.html">COOKIES</a>
+    </div>
+  </footer>
+
+</div>
+<script src="js/main_js.js"></script>
+</body>
+</html>
